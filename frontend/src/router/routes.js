@@ -7,6 +7,13 @@ const routes = [
       { path: '', component: () => import('pages/Index.vue') }
     ]
   },
+  {
+    path: '/saludar',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/Saludar.vue') }
+    ]
+  },
 
   // Always leave this as last one,
   // but you can also remove it
