@@ -19,7 +19,7 @@
 - Minimising the strain we put on the feed server.
 
 
- ##Development Stack
+ ## Development Stack
  - Laravel(7.2.5)
  - Quasar Framework (1.0.0)
  - Mysql 5.7
