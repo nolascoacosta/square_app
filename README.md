@@ -99,7 +99,8 @@ just install all the dependencies needed in the container it self.
     15 - php artisan optimize:clear
     16 - docker-compose build app
     17 - docker-compose up -d (start up all the services)
-    18 - docker-compose down (kill all the services)
+    18 - copy this ulr http://127.0.0.1:8000 in your browser
+    19 - docker-compose down (kill all the services)
 
 ```
 
