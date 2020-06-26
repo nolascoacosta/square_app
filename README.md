@@ -82,25 +82,25 @@ just install all the dependencies needed in the container it self.
  https://github.com/nolascoacosta/square_app.git 
     
     1 - cd frontend
-    2 - npm install --silent
-    3 - quasar build
+    2 - run npm install --silent
+    3 - run quasar build
     4 - cd root directory
     5 - cp .env.example .env
-    6 - composer install
-    7 - php artisan key:generate
-    8 - php artisan jwt:secret
-    8 - npm install --silent
-    9 - npm run prod
-    10 - php artisan migrate (migrate database)
-    11 - php artisan migrate:refresh --seed
-    12 - php artisan key:generate
-    13 - php artisan cache:clear
-    14 - php artisan config:clear
-    15 - php artisan optimize:clear
-    16 - docker-compose build app
-    17 - docker-compose up -d (start up all the services)
+    6 - run composer install
+    7 - run php artisan key:generate
+    8 - run php artisan jwt:secret
+    8 - run npm install --silent
+    9 - run npm run prod
+    10 - run php artisan migrate (migrate database)
+    11 - run php artisan migrate:refresh --seed
+    12 - run php artisan key:generate
+    13 - run php artisan cache:clear
+    14 - run php artisan config:clear
+    15 - run php artisan optimize:clear
+    16 - run docker-compose build app
+    17 - run docker-compose up -d (starts up all the services)
     18 - copy this ulr http://127.0.0.1:8000 in your browser
-    19 - docker-compose down (kill all the services)
+    19 - cd root directory and run docker-compose down (kill all the services)
 
 ```
 
