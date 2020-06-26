@@ -24,10 +24,10 @@ class UsersSeeder extends Seeder
     public function run()
     {
         \App\Models\User::create([
-            'first_name'        => 'Ramon',
-            'last_name'         => 'Nolasco',
-            'email'             => 'ramonnolasco@gmail.com',
-            'user_name'         => $this->generateUserName->generateUserName('Ramon','Nolasco'),
+            'first_name'        => 'Square',
+            'last_name'         => 'One',
+            'email'             => 'squareone@squareone.com',
+            'user_name'         => $this->generateUserName->generateUserName('Square','One'),
             'email_verified_at' => now(),
             'password'          => '123456789', // password
             'remember_token'    => \Illuminate\Support\Str::random(10),
