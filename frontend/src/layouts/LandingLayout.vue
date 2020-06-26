@@ -139,7 +139,7 @@
             to: '/'
           },
           {
-            lable: 'My Post',
+            lable: 'My Posts',
             icon: 'list',
             to: '/my-posts'
           },
