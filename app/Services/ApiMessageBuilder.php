@@ -1,5 +1,5 @@
 <?php
-namespace Square\Services;
+namespace App\Services;
 
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
@@ -142,6 +142,11 @@ final class ApiMessageBuilder
      */
     protected function makeResponseError(string $message, string $type, int $code, int $status): JsonResponse
     {
+//        return new JsonResponse( [
+//            'type'    => $type,
+//            'code'    => $code,
+//            'message' => $message,
+//        ],$status);
         return new JsonResponse(['errors' => [
             [
                 'type'    => $type,

@@ -1,5 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
+
     <q-header elevated>
       <q-toolbar>
         <q-btn
@@ -15,9 +16,14 @@
           Blogging App
         </q-toolbar-title>
 
+        <div>
+
+        </div>
+        <div>Quasar v{{ $q.version }}</div>
         <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
+
 
     <q-drawer
       v-model="leftDrawerOpen"
@@ -32,11 +38,6 @@
         >
           Essential Links
         </q-item-label>
-        <EssentialLink
-          v-for="link in essentialLinks"
-          :key="link.title"
-          v-bind="link"
-        />
       </q-list>
     </q-drawer>
 
@@ -47,7 +48,6 @@
 </template>
 
 <script>
-import EssentialLink from 'components/EssentialLink.vue'
 
 export default {
   name: 'MainLayout',
