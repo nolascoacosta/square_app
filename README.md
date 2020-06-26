@@ -63,8 +63,16 @@ put on the feed server.
 #### Manual installation
 
 ***
-Note: I understand this is probably not the best way to use docker since we could 
+Note: 
+The purpose of using docker compose is because it gives us 
+a greater ease when scaling our services vertically and thus managing
+ the high levels of traffic in our web applications.
+ 
+I understand this is probably not the best way to use docker since we could 
 just install all the dependencies needed in the container it self.
+
+
+
 
 *** 
 ## Installation
