@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Jobs\SyncRemotePostsApiDataJob;
+use App\Services\RemotePostService;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -13,7 +15,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bindMethod(SyncRemotePostsApiDataJob::class.'@handle', function ($job, $app) {
+            return $job->handle($app->make(RemotePostService::class));
+        });
     }
 
     /**

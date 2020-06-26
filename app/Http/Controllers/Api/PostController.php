@@ -1,17 +1,13 @@
 <?php
 
 namespace App\Http\Controllers\Api;
-
-use App\Http\Controllers\Controller;
 use App\Http\Requests\StorePostRequest;
 use App\Http\Requests\UpdatePostRequest;
 use App\Http\Resources\PostResource;
-use App\Jobs\AutoImportPost;
-use App\Jobs\ProcessPodcast;
-use App\Jobs\TrackHitJob;
+use App\Jobs\SyncRemotePostsApiDataJob;
 use App\Models\Post;
 use App\Services\ApiMessageBuilder;
-use App\Services\AutoImportPostService;
+use App\Services\RemotePostService;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Routing\ResponseFactory;
@@ -44,8 +40,6 @@ class PostController extends ApiController
      */
     public function index(Request $request)
     {
-
-
         $posts = auth()->user()->posts()->paginate();
 
         return PostResource::collection($posts);
@@ -56,12 +50,14 @@ class PostController extends ApiController
      */
     public function getAllPost(Request $request)
     {
+
         if ($request->has('published_date'))
         {
             $posts = Post::whereDate('publication_date', Carbon::parse($request->get('published_date'))->format('Y-m-d'))->paginate();;
         }else{
             $posts = Post::paginate();
         }
+        SyncRemotePostsApiDataJob::dispatch()->delay(Carbon::now()->addHour());
         return PostResource::collection($posts);
     }
 

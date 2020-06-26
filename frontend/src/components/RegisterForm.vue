@@ -125,6 +125,7 @@
                 message: response.data.message,
                 timeout: Math.random() * 5000 + 3000
               })
+              this.$emit('registered', true)
             })
             .catch(error => {
               this.errors = error.response.data.errors;

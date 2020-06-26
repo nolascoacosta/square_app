@@ -26,7 +26,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         // $schedule->command('inspire')->hourly();
-        $schedule->job(new SyncRemotePostsApiDataJob)->everyMinute();
+        $schedule->job(new SyncRemotePostsApiDataJob)->hourly();
     }
 
     /**

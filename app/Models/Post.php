@@ -3,6 +3,8 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
+
 /**
  * Represents a Post in the database.
  *
@@ -22,7 +24,7 @@ class Post extends Model
         'title','slug', 'description','user_id','publication_date'
     ];
 
-  /*  public function setSlugAttribute($value)
+   /* public function setSlugAttribute($value)
     {
         $this->attributes['slug'] = Str::slug($value);
     }*/

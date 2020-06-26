@@ -107,7 +107,7 @@
     </q-dialog>
 
     <q-dialog v-model="showRegForm">
-      <register-form></register-form>
+      <register-form @registered="showRegForm = !$event"></register-form>
     </q-dialog>
 
 
@@ -123,9 +123,6 @@
   import { date } from 'quasar'
   export default {
     name: 'MyLayout',
-    created() {
-      //console.log(this.getToken)
-    },
 
     data() {
       return {
