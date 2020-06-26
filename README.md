@@ -27,10 +27,11 @@
  - Jwt
  
  ## Prerequisites
- - Docker-compose
- - Composer
- - Npm
- - Quasar CLI
+ - [Docker-compose] (https://www.docker.com/get-started)
+ - [Composer] (https://getcomposer.org/doc/00-intro.md)
+ - [Npm] (https://www.npmjs.com/get-npm)
+ - [Vue-Cli] (https://cli.vuejs.org/guide/installation.html)
+ - [Quasar-Cli] (https://quasar.dev/quasar-cli/installation)
  
  ## About the structure
  Laravel API and Quasar framework are totally separate from each other and it's
