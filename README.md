@@ -63,7 +63,7 @@ put on the feed server.
 #### Manual installation
 
 ***
-Note: I understant this is probably not best way to use docker since we could 
+Note: I understand this is probably not best way to use docker since we could 
 just install all the dependencies needed in the container it self.
 
 *** 
