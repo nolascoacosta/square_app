@@ -102,22 +102,24 @@ just install all the dependencies needed in the container it self.
 
 ```
 
-## Print Screen
-####Langing Page
-![Schema](printscreen/LandingPage.png)
-####Loging Form
-![Schema](printscreen/LogingForm.png)
-####Register Form
-![Schema](printscreen/RegisterForm.png)
-####Landing Page Logged In
-![Schema](printscreen/LandingPageLoggedIn.png)
-####My Posts
-![Schema](printscreen/MyPosts.png)
-####Profile Page
-![Schema](printscreen/ProfilePage.png)
-####Profile Page
-![Schema](printscreen/ReadingPost.png)
 
+## Print Screens
+
+<img src="https://github.com/nolascoacosta/square_app/blob/development/printscreen/CreateNewPostForm.PNG?raw=true" width="500">
+
+<img src="https://github.com/nolascoacosta/square_app/blob/development/printscreen/LandingPage.PNG?raw=true" width="500">
+
+<img src="https://github.com/nolascoacosta/square_app/blob/development/printscreen/LandingPageLoggedIn.PNG?raw=true" width="500">
+
+<img src="https://github.com/nolascoacosta/square_app/blob/development/printscreen/LogingForm.PNG?raw=true" width="500">
+
+<img src="https://github.com/nolascoacosta/square_app/blob/development/printscreen/MyPosts.PNG?raw=true" width="500">
+
+<img src="https://github.com/nolascoacosta/square_app/blob/development/printscreen/ProfilePage.PNG?raw=true" width="500">
+
+<img src="https://github.com/nolascoacosta/square_app/blob/development/printscreen/ReadingPost.PNG?raw=true" width="500">
+
+<img src="https://github.com/nolascoacosta/square_app/blob/development/printscreen/RegisterForm.PNG?raw=true" width="500">
 
 
 
