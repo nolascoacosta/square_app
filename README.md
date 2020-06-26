@@ -53,7 +53,7 @@
       
  - Service php-queue (JobQueue)
       -
-      This service allow us to defer the processing of a time consuming task, 
+      This service allows us to defer the processing of a time consuming task, 
       such as auto importing the posts created from another blogging platform 
   
 The las two services really help the aplication Minimise the strain put on our system during traffic peaks and 
