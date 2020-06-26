@@ -24,9 +24,13 @@
  - Quasar Framework (1.0.0)
  - Mysql 5.7
  - Nginx
+ - Jwt
  
  ## Prerequisites
  - Docker-compose
+ - Composer
+ - Npm
+ - Quasar CLI
  
  ## About the structure
  Laravel API and Quasar framework are totally separate from each other and it's
@@ -55,5 +59,61 @@
 The las two services really help the aplication Minimise the strain put on our system during traffic peaks and 
 put on the feed server.  
 
-  
-       
+
+#### Manual installation
+
+***
+Note: I understant this is probably not best way to use docker since we could 
+just install all the dependencies needed in the container it self.
+
+*** 
+## Installation
+**1. Clone or download the repository and enter its folder**
+```
+ https://github.com/nolascoacosta/square_app.git 
+    
+    1 - cd frontend
+    2 - npm install --silent
+    3 - quasar build
+    4 - cd root directory
+    5 - cp .env.example .env
+    6 - composer install
+    7 - php artisan key:generate
+    8 - php artisan jwt:secret
+    8 - npm install --silent
+    9 - npm run prod
+    10 - php artisan migrate (migrate database)
+    11 - php artisan migrate:refresh --seed
+    12 - php artisan key:generate
+    13 - php artisan cache:clear
+    14 - php artisan config:clear
+    15 - php artisan optimize:clear
+    16 - docker-compose build app
+    17 - docker-compose up -d (start up all the services)
+    18 - docker-compose down (kill all the services)
+
+```
+
+## Print Screen
+####Langing Page
+![Schema](printscreen/LandingPage.png)
+####Loging Form
+![Schema](printscreen/LogingForm.png)
+####Register Form
+![Schema](printscreen/RegisterForm.png)
+####Landing Page Logged In
+![Schema](printscreen/LandingPageLoggedIn.png)
+####My Posts
+![Schema](printscreen/MyPosts.png)
+####Profile Page
+![Schema](printscreen/ProfilePage.png)
+####Profile Page
+![Schema](printscreen/ReadingPost.png)
+
+
+
+
+##### TODO LIST:
+- [ ] Avoid manual instalation of dependencies.
+
+
