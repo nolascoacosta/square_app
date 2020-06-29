@@ -25,8 +25,9 @@
  - Mysql 5.7
  - Nginx
  - Jwt
- 
+
  ## Prerequisites
+  - [Docker] (https://www.docker.com/)
  - [Docker-compose] (https://www.docker.com/get-started)
  - [Composer] (https://getcomposer.org/doc/00-intro.md)
  - [Npm] (https://www.npmjs.com/get-npm)
