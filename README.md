@@ -27,8 +27,8 @@
  - Jwt
 
  ## Prerequisites
-  - [Docker] (https://www.docker.com/)
- - [Docker-compose] (https://www.docker.com/get-started)
+  - [Docker] (https://docs.docker.com/get-docker/)
+ - [Docker-compose] (https://docs.docker.com/compose/install/)
  - [Composer] (https://getcomposer.org/doc/00-intro.md)
  - [Npm] (https://www.npmjs.com/get-npm)
  - [Vue-Cli] (https://cli.vuejs.org/guide/installation.html)
